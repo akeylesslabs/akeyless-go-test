@@ -34,7 +34,7 @@ git init
 
 # Create branch and checkout if not master
 if [ "$git_branch" != "master" ]; then
-    git checkout -b "$git_branch"
+    git checkout "$git_branch"
     echo "[INFO] switch to branch: $git_branch"
 fi
 
