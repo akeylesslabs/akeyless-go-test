@@ -13,7 +13,7 @@ For more information, please visit [http://akeyless.io](http://akeyless.io)
 To install this package, use:
 
 ```
-go get github.com/akeylesslabs/akeyless-go/v3
+go get github.com/akeylesslabs/akeyless-go-test/v3
 ```
 
 ## Getting Started
@@ -29,7 +29,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/akeylesslabs/akeyless-go/v3"
+	"github.com/akeylesslabs/akeyless-go-test/v3"
 )
 
 func main() {
