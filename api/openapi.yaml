@@ -6,7 +6,7 @@ info:
     url: http://akeyless.io
   description: The purpose of this application is to provide access to Akeyless API.
   title: Akeyless API
-  version: "2.0"
+  version: "3.0"
 servers:
 - url: https://api.akeyless.io/
 paths:
@@ -35,7 +35,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /assoc-target-item:
     post:
@@ -62,7 +62,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /auth:
     post:
@@ -97,7 +97,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /configure:
     post:
@@ -124,7 +124,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /connect:
     post:
@@ -151,7 +151,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-artifactory-target:
     post:
@@ -178,7 +178,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-auth-method:
     post:
@@ -205,7 +205,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-auth-method-aws-iam:
     post:
@@ -232,7 +232,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-auth-method-azure-ad:
     post:
@@ -259,7 +259,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-auth-method-cert:
     post:
@@ -286,7 +286,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-auth-method-gcp:
     post:
@@ -313,7 +313,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-auth-method-huawei:
     post:
@@ -340,7 +340,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-auth-method-k8s:
     post:
@@ -367,7 +367,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-auth-method-ldap:
     post:
@@ -394,7 +394,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-auth-method-oauth2:
     post:
@@ -421,7 +421,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-auth-method-oidc:
     post:
@@ -448,7 +448,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-auth-method-saml:
     post:
@@ -475,7 +475,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-auth-method-universal-identity:
     post:
@@ -502,7 +502,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-aws-target:
     post:
@@ -529,7 +529,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-azure-target:
     post:
@@ -556,7 +556,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-certificate:
     post:
@@ -583,7 +583,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-classic-key:
     post:
@@ -610,7 +610,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-db-target:
     post:
@@ -637,7 +637,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-dfc-key:
     post:
@@ -664,7 +664,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-dockerhub-target:
     post:
@@ -691,7 +691,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-dynamic-secret:
     post:
@@ -718,7 +718,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-eks-target:
     post:
@@ -745,7 +745,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-event-forwarder:
     post:
@@ -772,7 +772,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-gcp-target:
     post:
@@ -799,7 +799,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-github-target:
     post:
@@ -826,7 +826,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-gke-target:
     post:
@@ -853,7 +853,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-k8s-target:
     post:
@@ -880,7 +880,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-key:
     post:
@@ -907,7 +907,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-ldap-target:
     post:
@@ -934,7 +934,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-ping-target:
     post:
@@ -961,7 +961,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-pki-cert-issuer:
     post:
@@ -988,7 +988,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-rabbitmq-target:
     post:
@@ -1015,7 +1015,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-role:
     post:
@@ -1042,7 +1042,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-rotated-secret:
     post:
@@ -1069,7 +1069,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-salesforce-target:
     post:
@@ -1096,7 +1096,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-secret:
     post:
@@ -1123,7 +1123,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-ssh-cert-issuer:
     post:
@@ -1150,7 +1150,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-ssh-target:
     post:
@@ -1177,7 +1177,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-tokenizer:
     post:
@@ -1204,7 +1204,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /create-web-target:
     post:
@@ -1231,7 +1231,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /decrypt:
     post:
@@ -1258,7 +1258,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /decrypt-gpg:
     post:
@@ -1285,7 +1285,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /decrypt-pkcs1:
     post:
@@ -1312,7 +1312,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /decrypt-with-classic-key:
     post:
@@ -1339,7 +1339,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /delete-assoc:
     post:
@@ -1366,7 +1366,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /delete-assoc-target-item:
     post:
@@ -1393,7 +1393,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /delete-auth-method:
     post:
@@ -1420,7 +1420,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /delete-auth-methods:
     post:
@@ -1447,7 +1447,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /delete-event-forwarder:
     post:
@@ -1474,7 +1474,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /delete-item:
     post:
@@ -1501,7 +1501,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /delete-items:
     post:
@@ -1528,7 +1528,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /delete-role:
     post:
@@ -1555,7 +1555,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /delete-role-rule:
     post:
@@ -1582,7 +1582,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /delete-roles:
     post:
@@ -1609,7 +1609,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /delete-target:
     post:
@@ -1636,7 +1636,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /delete-targets:
     post:
@@ -1663,7 +1663,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /describe-item:
     post:
@@ -1690,7 +1690,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /describe-permissions:
     post:
@@ -1717,7 +1717,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /describe-sub-claims:
     post:
@@ -1752,7 +1752,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /detokenize:
     post:
@@ -1779,7 +1779,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /encrypt:
     post:
@@ -1806,7 +1806,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /encrypt-gpg:
     post:
@@ -1833,7 +1833,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /encrypt-with-classic-key:
     post:
@@ -1860,7 +1860,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /export-classic-key:
     post:
@@ -1887,7 +1887,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-k8s-auth-config:
     post:
@@ -1914,7 +1914,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-migration:
     post:
@@ -1941,7 +1941,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-artifactory:
     post:
@@ -1968,7 +1968,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-aws:
     post:
@@ -1995,7 +1995,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-azure:
     post:
@@ -2022,7 +2022,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-cassandra:
     post:
@@ -2049,7 +2049,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-certificate-automation:
     post:
@@ -2077,7 +2077,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-custom:
     post:
@@ -2104,7 +2104,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-dockerhub:
     post:
@@ -2131,7 +2131,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-eks:
     post:
@@ -2158,7 +2158,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-gcp:
     post:
@@ -2185,7 +2185,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-github:
     post:
@@ -2212,7 +2212,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-gke:
     post:
@@ -2239,7 +2239,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-hanadb:
     post:
@@ -2266,7 +2266,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-k8s:
     post:
@@ -2293,7 +2293,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-ldap:
     post:
@@ -2320,7 +2320,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-mongo:
     post:
@@ -2347,7 +2347,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-mssql:
     post:
@@ -2374,7 +2374,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-mysql:
     post:
@@ -2401,7 +2401,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-oracle:
     post:
@@ -2428,7 +2428,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-ping:
     post:
@@ -2455,7 +2455,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-postgresql:
     post:
@@ -2482,7 +2482,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-rabbitmq:
     post:
@@ -2509,7 +2509,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-rdp:
     post:
@@ -2536,7 +2536,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-redshift:
     post:
@@ -2563,7 +2563,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-create-producer-snowflake:
     post:
@@ -2590,7 +2590,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-delete-allowed-management-access:
     post:
@@ -2617,7 +2617,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-delete-k8s-auth-config:
     post:
@@ -2644,7 +2644,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-delete-migration:
     post:
@@ -2671,7 +2671,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-delete-producer:
     post:
@@ -2698,7 +2698,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-get-config:
     post:
@@ -2725,7 +2725,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-get-k8s-auth-config:
     post:
@@ -2752,7 +2752,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-get-ldap-auth-config:
     post:
@@ -2779,7 +2779,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-get-migration:
     post:
@@ -2806,7 +2806,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-get-producer:
     post:
@@ -2833,7 +2833,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-get-producer-tmp-creds:
     post:
@@ -2862,7 +2862,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-list-allowed-management-access:
     post:
@@ -2889,7 +2889,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-list-migration:
     post:
@@ -2916,7 +2916,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-list-producers:
     post:
@@ -2943,7 +2943,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-migrate-personal-items:
     post:
@@ -2970,7 +2970,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-migration-status:
     post:
@@ -2997,7 +2997,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-revoke-producer-tmp-creds:
     post:
@@ -3021,7 +3021,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-rotate-secret:
     post:
@@ -3048,7 +3048,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-start-producer:
     post:
@@ -3075,7 +3075,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-stop-producer:
     post:
@@ -3102,7 +3102,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-sync-migration:
     post:
@@ -3129,7 +3129,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-item:
     post:
@@ -3156,7 +3156,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-k8s-auth-config:
     post:
@@ -3183,7 +3183,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-ldap-auth-config:
     post:
@@ -3210,7 +3210,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-migration:
     post:
@@ -3237,7 +3237,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-artifactory:
     post:
@@ -3264,7 +3264,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-aws:
     post:
@@ -3291,7 +3291,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-azure:
     post:
@@ -3318,7 +3318,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-cassandra:
     post:
@@ -3345,7 +3345,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-certificate-automation:
     post:
@@ -3373,7 +3373,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-custom:
     post:
@@ -3400,7 +3400,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-dockerhub:
     post:
@@ -3427,7 +3427,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-eks:
     post:
@@ -3454,7 +3454,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-gcp:
     post:
@@ -3481,7 +3481,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-github:
     post:
@@ -3508,7 +3508,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-gke:
     post:
@@ -3535,7 +3535,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-hana:
     post:
@@ -3562,7 +3562,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-k8s:
     post:
@@ -3589,7 +3589,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-ldap:
     post:
@@ -3616,7 +3616,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-mongo:
     post:
@@ -3643,7 +3643,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-mssql:
     post:
@@ -3670,7 +3670,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-mysql:
     post:
@@ -3697,7 +3697,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-oracle:
     post:
@@ -3724,7 +3724,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-ping:
     post:
@@ -3751,7 +3751,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-postgresql:
     post:
@@ -3778,7 +3778,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-rabbitmq:
     post:
@@ -3805,7 +3805,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-rdp:
     post:
@@ -3832,7 +3832,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-redshift:
     post:
@@ -3859,7 +3859,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-snowflake:
     post:
@@ -3886,7 +3886,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-producer-tmp-creds:
     post:
@@ -3910,7 +3910,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /gateway-update-tls-cert:
     post:
@@ -3937,7 +3937,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-account-logo:
     post:
@@ -3960,7 +3960,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
   /get-account-settings:
     post:
       operationId: getAccountSettings
@@ -3986,7 +3986,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-auth-method:
     post:
@@ -4013,7 +4013,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-certificate-value:
     post:
@@ -4040,7 +4040,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-dynamic-secret-value:
     post:
@@ -4069,7 +4069,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-event-forwarder:
     post:
@@ -4096,7 +4096,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-kube-exec-creds:
     post:
@@ -4123,7 +4123,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-pki-certificate:
     post:
@@ -4150,7 +4150,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-role:
     post:
@@ -4177,7 +4177,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-rotated-secret-value:
     post:
@@ -4204,7 +4204,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-rsa-public:
     post:
@@ -4231,7 +4231,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-secret-value:
     post:
@@ -4260,7 +4260,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-ssh-certificate:
     post:
@@ -4287,7 +4287,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-tags:
     post:
@@ -4316,7 +4316,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-target:
     post:
@@ -4343,7 +4343,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /get-target-details:
     post:
@@ -4370,7 +4370,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /kmip-client-delete-rule:
     post:
@@ -4397,7 +4397,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /kmip-client-set-rule:
     post:
@@ -4424,7 +4424,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /kmip-create-client:
     post:
@@ -4451,7 +4451,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /kmip-create-environment:
     post:
@@ -4478,7 +4478,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /kmip-delete-client:
     post:
@@ -4505,7 +4505,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /kmip-delete-environment:
     delete:
@@ -4532,7 +4532,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /kmip-get-client:
     post:
@@ -4559,7 +4559,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /kmip-get-environment:
     post:
@@ -4586,7 +4586,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /kmip-list-clients:
     post:
@@ -4613,7 +4613,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /kmip-move-environment:
     post:
@@ -4640,7 +4640,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /kmip-renew-client:
     post:
@@ -4667,7 +4667,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /kmip-renew-environment:
     post:
@@ -4694,7 +4694,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /kmip-set-environment-state:
     post:
@@ -4721,7 +4721,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /list-auth-methods:
     post:
@@ -4748,7 +4748,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /list-gateways:
     post:
@@ -4775,7 +4775,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /list-items:
     post:
@@ -4802,7 +4802,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /list-roles:
     post:
@@ -4829,7 +4829,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /list-shared-items:
     post:
@@ -4853,7 +4853,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /list-sra-bastions:
     post:
@@ -4880,7 +4880,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /list-targets:
     post:
@@ -4907,7 +4907,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /move-objects:
     post:
@@ -4934,7 +4934,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /raw-creds:
     post:
@@ -4961,7 +4961,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /refresh-key:
     post:
@@ -4988,7 +4988,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /request-access:
     post:
@@ -5015,7 +5015,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /reverse-rbac:
     post:
@@ -5042,7 +5042,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /revoke-creds:
     post:
@@ -5063,7 +5063,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
   /rollback-secret:
     post:
       operationId: rollbackSecret
@@ -5089,7 +5089,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /rotate-key:
     post:
@@ -5116,7 +5116,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /set-item-state:
     post:
@@ -5143,7 +5143,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /set-role-rule:
     post:
@@ -5170,7 +5170,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /share-item:
     post:
@@ -5194,7 +5194,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /sign-gpg:
     post:
@@ -5221,7 +5221,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /sign-jwt-with-classic-key:
     post:
@@ -5248,7 +5248,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /sign-pkcs1:
     post:
@@ -5275,7 +5275,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /sign-pki-cert-with-classic-key:
     post:
@@ -5302,7 +5302,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /static-creds-auth:
     post:
@@ -5329,7 +5329,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /tokenize:
     post:
@@ -5356,7 +5356,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /uid-create-child-token:
     post:
@@ -5383,7 +5383,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /uid-generate-token:
     post:
@@ -5410,7 +5410,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /uid-list-children:
     post:
@@ -5437,7 +5437,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /uid-revoke-token:
     post:
@@ -5464,7 +5464,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /uid-rotate-token:
     post:
@@ -5491,7 +5491,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-account-settings:
     post:
@@ -5518,7 +5518,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-artifactory-target:
     post:
@@ -5545,7 +5545,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-assoc:
     post:
@@ -5572,7 +5572,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-auth-method:
     post:
@@ -5599,7 +5599,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-auth-method-aws-iam:
     post:
@@ -5626,7 +5626,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-auth-method-azure-ad:
     post:
@@ -5653,7 +5653,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-auth-method-cert:
     post:
@@ -5680,7 +5680,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-auth-method-gcp:
     post:
@@ -5707,7 +5707,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-auth-method-k8s:
     post:
@@ -5734,7 +5734,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-auth-method-ldap:
     post:
@@ -5761,7 +5761,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-auth-method-oauth2:
     post:
@@ -5788,7 +5788,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-auth-method-oidc:
     post:
@@ -5815,7 +5815,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-auth-method-saml:
     post:
@@ -5842,7 +5842,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-auth-method-universal-identity:
     post:
@@ -5869,7 +5869,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-aws-target:
     post:
@@ -5896,7 +5896,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-aws-target-details:
     post:
@@ -5923,7 +5923,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-azure-target:
     post:
@@ -5950,7 +5950,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-certificate-value:
     post:
@@ -5977,7 +5977,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-db-target:
     post:
@@ -6004,7 +6004,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-db-target-details:
     post:
@@ -6031,7 +6031,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-dockerhub-target:
     post:
@@ -6058,7 +6058,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-eks-target:
     post:
@@ -6085,7 +6085,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-event-forwarder:
     post:
@@ -6112,7 +6112,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-gcp-target:
     post:
@@ -6139,7 +6139,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-github-target:
     post:
@@ -6166,7 +6166,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-gke-target:
     post:
@@ -6193,7 +6193,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-item:
     post:
@@ -6220,7 +6220,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-k8s-target:
     post:
@@ -6247,7 +6247,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-ldap-target:
     post:
@@ -6274,7 +6274,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-ldap-target-details:
     post:
@@ -6301,7 +6301,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-ping-target:
     post:
@@ -6328,7 +6328,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-pki-cert-issuer:
     post:
@@ -6355,7 +6355,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-rabbitmq-target:
     post:
@@ -6382,7 +6382,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-rabbitmq-target-details:
     post:
@@ -6409,7 +6409,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-rdp-target-details:
     post:
@@ -6436,7 +6436,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-role:
     post:
@@ -6463,7 +6463,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-rotated-secret:
     post:
@@ -6490,7 +6490,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-rotation-settingsrotate-key:
     post:
@@ -6511,7 +6511,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
   /update-salesforce-target:
     post:
       operationId: updateSalesforceTarget
@@ -6537,7 +6537,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-secret-val:
     post:
@@ -6564,7 +6564,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-ssh-cert-issuer:
     post:
@@ -6591,7 +6591,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-ssh-target:
     post:
@@ -6618,7 +6618,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-ssh-target-details:
     post:
@@ -6645,7 +6645,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-target:
     post:
@@ -6672,7 +6672,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-target-details:
     post:
@@ -6699,7 +6699,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-web-target:
     post:
@@ -6726,7 +6726,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /update-web-target-details:
     post:
@@ -6753,7 +6753,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /upload-rsa:
     post:
@@ -6780,7 +6780,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /validate-token:
     post:
@@ -6815,7 +6815,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /verify-gpg:
     post:
@@ -6842,7 +6842,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /verify-jwt-with-classic-key:
     post:
@@ -6869,7 +6869,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /verify-pkcs1:
     post:
@@ -6896,7 +6896,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
   /verify-pki-cert-with-classic-key:
     post:
@@ -6923,7 +6923,7 @@ paths:
             errorResponse wraps any error to return it as a JSON object with one "error"
             field.
       tags:
-      - v2
+      - v3
       x-codegen-request-body-name: body
 components:
   responses:

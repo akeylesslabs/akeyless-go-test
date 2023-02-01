@@ -3,7 +3,7 @@
  *
  * The purpose of this application is to provide access to Akeyless API.
  *
- * API version: 2.0
+ * API version: 3.0
  * Contact: support@akeyless.io
  */
 
@@ -102,7 +102,7 @@ type Configuration struct {
 func NewConfiguration() *Configuration {
 	cfg := &Configuration{
 		DefaultHeader:    make(map[string]string),
-		UserAgent:        "OpenAPI-Generator/3.2.1/go",
+		UserAgent:        "OpenAPI-Generator/3.2.2-only-branch12/go",
 		Debug:            false,
 		Servers:          ServerConfigurations{
 			{

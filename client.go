@@ -3,7 +3,7 @@
  *
  * The purpose of this application is to provide access to Akeyless API.
  *
- * API version: 2.0
+ * API version: 3.0
  * Contact: support@akeyless.io
  */
 
@@ -41,7 +41,7 @@ var (
 	xmlCheck  = regexp.MustCompile(`(?i:(?:application|text)/xml)`)
 )
 
-// APIClient manages communication with the Akeyless API API v2.0
+// APIClient manages communication with the Akeyless API API v3.0
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	cfg    *Configuration
@@ -49,7 +49,7 @@ type APIClient struct {
 
 	// API Services
 
-	V2Api *V2ApiService
+	V3Api *V3ApiService
 }
 
 type service struct {
@@ -68,7 +68,7 @@ func NewAPIClient(cfg *Configuration) *APIClient {
 	c.common.client = c
 
 	// API Services
-	c.V2Api = (*V2ApiService)(&c.common)
+	c.V3Api = (*V3ApiService)(&c.common)
 
 	return c
 }

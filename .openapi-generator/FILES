@@ -1,9 +1,8 @@
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 README.md
 api/openapi.yaml
-api_v2.go
+api_v3.go
 client.go
 configuration.go
 docs/APIKeyAccessRules.md
@@ -594,7 +593,7 @@ docs/UpdateWebTargetDetails.md
 docs/UpdateWebTargetOutput.md
 docs/UploadPKCS12.md
 docs/UploadRSA.md
-docs/V2Api.md
+docs/V3Api.md
 docs/ValidateToken.md
 docs/ValidateTokenOutput.md
 docs/VaultlessTokenizerInfo.md
