@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AccessExpires** | Pointer to **int64** | Access expiration date in Unix timestamp (select 0 for access without expiry date) | [optional] [default to 0]
-**AuthUrl** | Pointer to **string** | sts URL | [optional] [default to "https://iam.myhwclouds.com:443/v3"]
+**AuthUrl** | Pointer to **string** | sts URL | [optional] [default to "https://iam.myhwclouds.com:443/v2"]
 **BoundDomainId** | Pointer to **[]string** | A list of domain IDs that the access is restricted to | [optional] 
 **BoundDomainName** | Pointer to **[]string** | A list of domain names that the access is restricted to | [optional] 
 **BoundIps** | Pointer to **[]string** | A CIDR whitelist with the IPs that the access is restricted to | [optional] 
