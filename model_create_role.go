@@ -37,6 +37,8 @@ type CreateRole struct {
 	Token *string `json:"token,omitempty"`
 	// The universal identity token, Required only for universal_identity authentication
 	UidToken *string `json:"uid-token,omitempty"`
+	// Allow this role to view Usage Report. Currently only 'none' and 'all' values are supported.
+	UsageReportsAccess *string `json:"usage-reports-access,omitempty"`
 }
 
 // NewCreateRole instantiates a new CreateRole object
@@ -45,6 +47,8 @@ type CreateRole struct {
 // will change when the set of required properties is changed
 func NewCreateRole(name string, ) *CreateRole {
 	this := CreateRole{}
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -54,6 +58,8 @@ func NewCreateRole(name string, ) *CreateRole {
 // but it doesn't guarantee that properties required by API are set
 func NewCreateRoleWithDefaults() *CreateRole {
 	this := CreateRole{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 
@@ -369,6 +375,38 @@ func (o *CreateRole) SetUidToken(v string) {
 	o.UidToken = &v
 }
 
+// GetUsageReportsAccess returns the UsageReportsAccess field value if set, zero value otherwise.
+func (o *CreateRole) GetUsageReportsAccess() string {
+	if o == nil || o.UsageReportsAccess == nil {
+		var ret string
+		return ret
+	}
+	return *o.UsageReportsAccess
+}
+
+// GetUsageReportsAccessOk returns a tuple with the UsageReportsAccess field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *CreateRole) GetUsageReportsAccessOk() (*string, bool) {
+	if o == nil || o.UsageReportsAccess == nil {
+		return nil, false
+	}
+	return o.UsageReportsAccess, true
+}
+
+// HasUsageReportsAccess returns a boolean if a field has been set.
+func (o *CreateRole) HasUsageReportsAccess() bool {
+	if o != nil && o.UsageReportsAccess != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetUsageReportsAccess gets a reference to the given string and assigns it to the UsageReportsAccess field.
+func (o *CreateRole) SetUsageReportsAccess(v string) {
+	o.UsageReportsAccess = &v
+}
+
 func (o CreateRole) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
 	if o.AnalyticsAccess != nil {
@@ -400,6 +438,9 @@ func (o CreateRole) MarshalJSON() ([]byte, error) {
 	}
 	if o.UidToken != nil {
 		toSerialize["uid-token"] = o.UidToken
+	}
+	if o.UsageReportsAccess != nil {
+		toSerialize["usage-reports-access"] = o.UsageReportsAccess
 	}
 	return json.Marshal(toSerialize)
 }

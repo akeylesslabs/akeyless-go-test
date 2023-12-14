@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **GkeClusterEndpoint** | Pointer to **string** | GKE cluster URL endpoint | [optional] 
 **GkeClusterName** | Pointer to **string** | GKE cluster name | [optional] 
 **GkeServiceAccountEmail** | Pointer to **string** | GKE service account email | [optional] 
-**Json** | Pointer to **bool** | Set output format to JSON | [optional] 
+**Json** | Pointer to **bool** | Set output format to JSON | [optional] [default to false]
 **Key** | Pointer to **string** | The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used) | [optional] 
 **Name** | **string** | Target name | 
 **Token** | Pointer to **string** | Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;) | [optional] 

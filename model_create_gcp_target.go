@@ -42,6 +42,8 @@ type CreateGcpTarget struct {
 // will change when the set of required properties is changed
 func NewCreateGcpTarget(name string, ) *CreateGcpTarget {
 	this := CreateGcpTarget{}
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -51,6 +53,8 @@ func NewCreateGcpTarget(name string, ) *CreateGcpTarget {
 // but it doesn't guarantee that properties required by API are set
 func NewCreateGcpTargetWithDefaults() *CreateGcpTarget {
 	this := CreateGcpTarget{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

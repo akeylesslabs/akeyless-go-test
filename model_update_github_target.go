@@ -29,6 +29,7 @@ type UpdateGithubTarget struct {
 	GithubBaseUrl *string `json:"github-base-url,omitempty"`
 	// Set output format to JSON
 	Json *bool `json:"json,omitempty"`
+	// Whether to keep previous version [true/false]. If not set, use default according to account settings
 	KeepPrevVersion *string `json:"keep-prev-version,omitempty"`
 	// The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used)
 	Key *string `json:"key,omitempty"`
@@ -50,6 +51,10 @@ type UpdateGithubTarget struct {
 // will change when the set of required properties is changed
 func NewUpdateGithubTarget(name string, ) *UpdateGithubTarget {
 	this := UpdateGithubTarget{}
+	var githubBaseUrl string = "https://api.github.com/"
+	this.GithubBaseUrl = &githubBaseUrl
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -59,6 +64,10 @@ func NewUpdateGithubTarget(name string, ) *UpdateGithubTarget {
 // but it doesn't guarantee that properties required by API are set
 func NewUpdateGithubTargetWithDefaults() *UpdateGithubTarget {
 	this := UpdateGithubTarget{}
+	var githubBaseUrl string = "https://api.github.com/"
+	this.GithubBaseUrl = &githubBaseUrl
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

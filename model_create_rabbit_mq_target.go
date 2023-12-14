@@ -42,6 +42,8 @@ type CreateRabbitMQTarget struct {
 // will change when the set of required properties is changed
 func NewCreateRabbitMQTarget(name string, ) *CreateRabbitMQTarget {
 	this := CreateRabbitMQTarget{}
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -51,6 +53,8 @@ func NewCreateRabbitMQTarget(name string, ) *CreateRabbitMQTarget {
 // but it doesn't guarantee that properties required by API are set
 func NewCreateRabbitMQTargetWithDefaults() *CreateRabbitMQTarget {
 	this := CreateRabbitMQTarget{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

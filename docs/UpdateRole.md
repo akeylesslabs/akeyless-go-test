@@ -8,13 +8,14 @@ Name | Type | Description | Notes
 **AuditAccess** | Pointer to **string** | Allow this role to view audit logs. Currently only &#39;none&#39;, &#39;own&#39; and &#39;all&#39; values are supported, allowing associated auth methods to view audit logs produced by the same auth methods. | [optional] 
 **Description** | Pointer to **string** | Description of the object | [optional] [default to "default_comment"]
 **GwAnalyticsAccess** | Pointer to **string** | Allow this role to view gw analytics. Currently only &#39;none&#39;, &#39;own&#39;, &#39;all&#39; values are supported, allowing associated auth methods to view reports produced by the same auth methods. | [optional] 
-**Json** | Pointer to **bool** | Set output format to JSON | [optional] 
+**Json** | Pointer to **bool** | Set output format to JSON | [optional] [default to false]
 **Name** | **string** | Role name | 
 **NewComment** | Pointer to **string** | Deprecated - use description | [optional] [default to "default_comment"]
 **NewName** | Pointer to **string** | New Role name | [optional] 
 **SraReportsAccess** | Pointer to **string** | Allow this role to view SRA Clusters. Currently only &#39;none&#39;, &#39;own&#39;, &#39;all&#39; values are supported. | [optional] 
 **Token** | Pointer to **string** | Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;) | [optional] 
 **UidToken** | Pointer to **string** | The universal identity token, Required only for universal_identity authentication | [optional] 
+**UsageReportsAccess** | Pointer to **string** | Allow this role to view Usage Report. Currently only &#39;none&#39; and &#39;all&#39; values are supported. | [optional] 
 
 ## Methods
 
@@ -304,6 +305,31 @@ SetUidToken sets UidToken field to given value.
 `func (o *UpdateRole) HasUidToken() bool`
 
 HasUidToken returns a boolean if a field has been set.
+
+### GetUsageReportsAccess
+
+`func (o *UpdateRole) GetUsageReportsAccess() string`
+
+GetUsageReportsAccess returns the UsageReportsAccess field if non-nil, zero value otherwise.
+
+### GetUsageReportsAccessOk
+
+`func (o *UpdateRole) GetUsageReportsAccessOk() (*string, bool)`
+
+GetUsageReportsAccessOk returns a tuple with the UsageReportsAccess field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUsageReportsAccess
+
+`func (o *UpdateRole) SetUsageReportsAccess(v string)`
+
+SetUsageReportsAccess sets UsageReportsAccess field to given value.
+
+### HasUsageReportsAccess
+
+`func (o *UpdateRole) HasUsageReportsAccess() bool`
+
+HasUsageReportsAccess returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

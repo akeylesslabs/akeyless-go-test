@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **EksClusterName** | **string** | EKS cluster name | 
 **EksRegion** | Pointer to **string** | Region | [optional] [default to "us-east-2"]
 **EksSecretAccessKey** | **string** | Secret Access Key | 
-**Json** | Pointer to **bool** | Set output format to JSON | [optional] 
-**KeepPrevVersion** | Pointer to **string** |  | [optional] 
+**Json** | Pointer to **bool** | Set output format to JSON | [optional] [default to false]
+**KeepPrevVersion** | Pointer to **string** | Whether to keep previous version [true/false]. If not set, use default according to account settings | [optional] 
 **Key** | Pointer to **string** | The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used) | [optional] 
 **Name** | **string** | Target name | 
 **NewName** | Pointer to **string** | New target name | [optional] 

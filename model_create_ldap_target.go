@@ -53,6 +53,8 @@ func NewCreateLdapTarget(bindDn string, bindDnPassword string, ldapUrl string, n
 	this := CreateLdapTarget{}
 	this.BindDn = bindDn
 	this.BindDnPassword = bindDnPassword
+	var json bool = false
+	this.Json = &json
 	this.LdapUrl = ldapUrl
 	this.Name = name
 	var serverType string = "OpenLDAP"
@@ -65,6 +67,8 @@ func NewCreateLdapTarget(bindDn string, bindDnPassword string, ldapUrl string, n
 // but it doesn't guarantee that properties required by API are set
 func NewCreateLdapTargetWithDefaults() *CreateLdapTarget {
 	this := CreateLdapTarget{}
+	var json bool = false
+	this.Json = &json
 	var serverType string = "OpenLDAP"
 	this.ServerType = &serverType
 	return &this

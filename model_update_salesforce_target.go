@@ -37,6 +37,7 @@ type UpdateSalesforceTarget struct {
 	Email string `json:"email"`
 	// Set output format to JSON
 	Json *bool `json:"json,omitempty"`
+	// Whether to keep previous version [true/false]. If not set, use default according to account settings
 	KeepPrevVersion *string `json:"keep-prev-version,omitempty"`
 	// The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used)
 	Key *string `json:"key,omitempty"`
@@ -67,6 +68,8 @@ func NewUpdateSalesforceTarget(authFlow string, clientId string, email string, n
 	this.AuthFlow = authFlow
 	this.ClientId = clientId
 	this.Email = email
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	this.TenantUrl = tenantUrl
 	return &this
@@ -77,6 +80,8 @@ func NewUpdateSalesforceTarget(authFlow string, clientId string, email string, n
 // but it doesn't guarantee that properties required by API are set
 func NewUpdateSalesforceTargetWithDefaults() *UpdateSalesforceTarget {
 	this := UpdateSalesforceTarget{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

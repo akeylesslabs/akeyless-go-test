@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** | Description of the object | [optional] 
 **DockerhubPassword** | Pointer to **string** | DockerhubPassword is either the user&#39;s password to manage the repository | [optional] 
 **DockerhubUsername** | Pointer to **string** | DockerhubUsername is the name of the user in dockerhub | [optional] 
-**Json** | Pointer to **bool** | Set output format to JSON | [optional] 
+**Json** | Pointer to **bool** | Set output format to JSON | [optional] [default to false]
 **Key** | Pointer to **string** | The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used) | [optional] 
 **Name** | **string** | Target name | 
 **Token** | Pointer to **string** | Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;) | [optional] 

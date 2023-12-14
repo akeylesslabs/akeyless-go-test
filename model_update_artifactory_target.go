@@ -29,6 +29,7 @@ type UpdateArtifactoryTarget struct {
 	Description *string `json:"description,omitempty"`
 	// Set output format to JSON
 	Json *bool `json:"json,omitempty"`
+	// Whether to keep previous version [true/false]. If not set, use default according to account settings
 	KeepPrevVersion *string `json:"keep-prev-version,omitempty"`
 	// The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used)
 	Key *string `json:"key,omitempty"`
@@ -53,6 +54,8 @@ func NewUpdateArtifactoryTarget(artifactoryAdminName string, artifactoryAdminPwd
 	this.ArtifactoryAdminName = artifactoryAdminName
 	this.ArtifactoryAdminPwd = artifactoryAdminPwd
 	this.BaseUrl = baseUrl
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -62,6 +65,8 @@ func NewUpdateArtifactoryTarget(artifactoryAdminName string, artifactoryAdminPwd
 // but it doesn't guarantee that properties required by API are set
 func NewUpdateArtifactoryTargetWithDefaults() *UpdateArtifactoryTarget {
 	this := UpdateArtifactoryTarget{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

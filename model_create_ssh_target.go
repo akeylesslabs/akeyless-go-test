@@ -21,6 +21,7 @@ type CreateSSHTarget struct {
 	Comment *string `json:"comment,omitempty"`
 	// Description of the object
 	Description *string `json:"description,omitempty"`
+	// SSH host name
 	Host *string `json:"host,omitempty"`
 	// Set output format to JSON
 	Json *bool `json:"json,omitempty"`
@@ -28,10 +29,15 @@ type CreateSSHTarget struct {
 	Key *string `json:"key,omitempty"`
 	// Target name
 	Name string `json:"name"`
+	// SSH port
 	Port *string `json:"port,omitempty"`
+	// SSH private key
 	PrivateKey *string `json:"private-key,omitempty"`
+	// SSH private key password
 	PrivateKeyPassword *string `json:"private-key-password,omitempty"`
+	// SSH password to rotate
 	SshPassword *string `json:"ssh-password,omitempty"`
+	// SSH username
 	SshUsername *string `json:"ssh-username,omitempty"`
 	// Authentication token (see `/auth` and `/configure`)
 	Token *string `json:"token,omitempty"`
@@ -45,7 +51,11 @@ type CreateSSHTarget struct {
 // will change when the set of required properties is changed
 func NewCreateSSHTarget(name string, ) *CreateSSHTarget {
 	this := CreateSSHTarget{}
+	var json bool = false
+	this.Json = &json
 	this.Name = name
+	var port string = "22"
+	this.Port = &port
 	return &this
 }
 
@@ -54,6 +64,10 @@ func NewCreateSSHTarget(name string, ) *CreateSSHTarget {
 // but it doesn't guarantee that properties required by API are set
 func NewCreateSSHTargetWithDefaults() *CreateSSHTarget {
 	this := CreateSSHTarget{}
+	var json bool = false
+	this.Json = &json
+	var port string = "22"
+	this.Port = &port
 	return &this
 }
 

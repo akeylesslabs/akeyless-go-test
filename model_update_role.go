@@ -39,6 +39,8 @@ type UpdateRole struct {
 	Token *string `json:"token,omitempty"`
 	// The universal identity token, Required only for universal_identity authentication
 	UidToken *string `json:"uid-token,omitempty"`
+	// Allow this role to view Usage Report. Currently only 'none' and 'all' values are supported.
+	UsageReportsAccess *string `json:"usage-reports-access,omitempty"`
 }
 
 // NewUpdateRole instantiates a new UpdateRole object
@@ -49,6 +51,8 @@ func NewUpdateRole(name string, ) *UpdateRole {
 	this := UpdateRole{}
 	var description string = "default_comment"
 	this.Description = &description
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	var newComment string = "default_comment"
 	this.NewComment = &newComment
@@ -62,6 +66,8 @@ func NewUpdateRoleWithDefaults() *UpdateRole {
 	this := UpdateRole{}
 	var description string = "default_comment"
 	this.Description = &description
+	var json bool = false
+	this.Json = &json
 	var newComment string = "default_comment"
 	this.NewComment = &newComment
 	return &this
@@ -411,6 +417,38 @@ func (o *UpdateRole) SetUidToken(v string) {
 	o.UidToken = &v
 }
 
+// GetUsageReportsAccess returns the UsageReportsAccess field value if set, zero value otherwise.
+func (o *UpdateRole) GetUsageReportsAccess() string {
+	if o == nil || o.UsageReportsAccess == nil {
+		var ret string
+		return ret
+	}
+	return *o.UsageReportsAccess
+}
+
+// GetUsageReportsAccessOk returns a tuple with the UsageReportsAccess field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *UpdateRole) GetUsageReportsAccessOk() (*string, bool) {
+	if o == nil || o.UsageReportsAccess == nil {
+		return nil, false
+	}
+	return o.UsageReportsAccess, true
+}
+
+// HasUsageReportsAccess returns a boolean if a field has been set.
+func (o *UpdateRole) HasUsageReportsAccess() bool {
+	if o != nil && o.UsageReportsAccess != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetUsageReportsAccess gets a reference to the given string and assigns it to the UsageReportsAccess field.
+func (o *UpdateRole) SetUsageReportsAccess(v string) {
+	o.UsageReportsAccess = &v
+}
+
 func (o UpdateRole) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
 	if o.AnalyticsAccess != nil {
@@ -445,6 +483,9 @@ func (o UpdateRole) MarshalJSON() ([]byte, error) {
 	}
 	if o.UidToken != nil {
 		toSerialize["uid-token"] = o.UidToken
+	}
+	if o.UsageReportsAccess != nil {
+		toSerialize["usage-reports-access"] = o.UsageReportsAccess
 	}
 	return json.Marshal(toSerialize)
 }

@@ -45,6 +45,8 @@ type UidCreateChildToken struct {
 // will change when the set of required properties is changed
 func NewUidCreateChildToken() *UidCreateChildToken {
 	this := UidCreateChildToken{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 
@@ -53,6 +55,8 @@ func NewUidCreateChildToken() *UidCreateChildToken {
 // but it doesn't guarantee that properties required by API are set
 func NewUidCreateChildTokenWithDefaults() *UidCreateChildToken {
 	this := UidCreateChildToken{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

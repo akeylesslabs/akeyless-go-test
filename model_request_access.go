@@ -40,6 +40,8 @@ type RequestAccess struct {
 func NewRequestAccess(capability []string, name string, ) *RequestAccess {
 	this := RequestAccess{}
 	this.Capability = capability
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -49,6 +51,8 @@ func NewRequestAccess(capability []string, name string, ) *RequestAccess {
 // but it doesn't guarantee that properties required by API are set
 func NewRequestAccessWithDefaults() *RequestAccess {
 	this := RequestAccess{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

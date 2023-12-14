@@ -4,27 +4,27 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AccessKey** | Pointer to **string** |  | [optional] 
-**AccessKeyId** | Pointer to **string** |  | [optional] 
+**AccessKey** | **string** | AWS secret access key | 
+**AccessKeyId** | **string** | AWS access key ID | 
 **Comment** | Pointer to **string** | Deprecated - use description | [optional] 
 **Description** | Pointer to **string** | Description of the object | [optional] 
-**Json** | Pointer to **bool** | Set output format to JSON | [optional] 
-**KeepPrevVersion** | Pointer to **string** |  | [optional] 
+**Json** | Pointer to **bool** | Set output format to JSON | [optional] [default to false]
+**KeepPrevVersion** | Pointer to **string** | Whether to keep previous version [true/false]. If not set, use default according to account settings | [optional] 
 **Key** | Pointer to **string** | The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used) | [optional] 
 **Name** | **string** | Target name | 
 **NewName** | Pointer to **string** | New target name | [optional] 
-**Region** | Pointer to **string** |  | [optional] 
-**SessionToken** | Pointer to **string** |  | [optional] 
+**Region** | Pointer to **string** | AWS region | [optional] [default to "us-east-2"]
+**SessionToken** | Pointer to **string** | Required only for temporary security credentials retrieved using STS | [optional] 
 **Token** | Pointer to **string** | Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;) | [optional] 
 **UidToken** | Pointer to **string** | The universal identity token, Required only for universal_identity authentication | [optional] 
 **UpdateVersion** | Pointer to **bool** | Deprecated | [optional] 
-**UseGwCloudIdentity** | Pointer to **bool** |  | [optional] 
+**UseGwCloudIdentity** | Pointer to **bool** | Use the GW&#39;s Cloud IAM | [optional] 
 
 ## Methods
 
 ### NewUpdateAWSTarget
 
-`func NewUpdateAWSTarget(name string, ) *UpdateAWSTarget`
+`func NewUpdateAWSTarget(accessKey string, accessKeyId string, name string, ) *UpdateAWSTarget`
 
 NewUpdateAWSTarget instantiates a new UpdateAWSTarget object
 This constructor will assign default values to properties that have it defined,
@@ -58,11 +58,6 @@ and a boolean to check if the value has been set.
 
 SetAccessKey sets AccessKey field to given value.
 
-### HasAccessKey
-
-`func (o *UpdateAWSTarget) HasAccessKey() bool`
-
-HasAccessKey returns a boolean if a field has been set.
 
 ### GetAccessKeyId
 
@@ -83,11 +78,6 @@ and a boolean to check if the value has been set.
 
 SetAccessKeyId sets AccessKeyId field to given value.
 
-### HasAccessKeyId
-
-`func (o *UpdateAWSTarget) HasAccessKeyId() bool`
-
-HasAccessKeyId returns a boolean if a field has been set.
 
 ### GetComment
 

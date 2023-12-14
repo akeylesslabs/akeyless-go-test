@@ -41,6 +41,8 @@ type CreateWebTarget struct {
 // will change when the set of required properties is changed
 func NewCreateWebTarget(name string, ) *CreateWebTarget {
 	this := CreateWebTarget{}
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -50,6 +52,8 @@ func NewCreateWebTarget(name string, ) *CreateWebTarget {
 // but it doesn't guarantee that properties required by API are set
 func NewCreateWebTargetWithDefaults() *CreateWebTarget {
 	this := CreateWebTarget{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

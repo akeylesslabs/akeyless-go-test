@@ -59,6 +59,8 @@ func NewCreateEKSTarget(eksAccessKeyId string, eksClusterCaCert string, eksClust
 	var eksRegion string = "us-east-2"
 	this.EksRegion = &eksRegion
 	this.EksSecretAccessKey = eksSecretAccessKey
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -70,6 +72,8 @@ func NewCreateEKSTargetWithDefaults() *CreateEKSTarget {
 	this := CreateEKSTarget{}
 	var eksRegion string = "us-east-2"
 	this.EksRegion = &eksRegion
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

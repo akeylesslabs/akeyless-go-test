@@ -25,6 +25,7 @@ type UpdateLdapTarget struct {
 	Description *string `json:"description,omitempty"`
 	// Set output format to JSON
 	Json *bool `json:"json,omitempty"`
+	// Whether to keep previous version [true/false]. If not set, use default according to account settings
 	KeepPrevVersion *string `json:"keep-prev-version,omitempty"`
 	// The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used)
 	Key *string `json:"key,omitempty"`
@@ -51,6 +52,8 @@ type UpdateLdapTarget struct {
 // will change when the set of required properties is changed
 func NewUpdateLdapTarget(name string, ) *UpdateLdapTarget {
 	this := UpdateLdapTarget{}
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -60,6 +63,8 @@ func NewUpdateLdapTarget(name string, ) *UpdateLdapTarget {
 // but it doesn't guarantee that properties required by API are set
 func NewUpdateLdapTargetWithDefaults() *UpdateLdapTarget {
 	this := UpdateLdapTarget{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

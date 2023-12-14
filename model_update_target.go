@@ -41,6 +41,8 @@ func NewUpdateTarget(name string, ) *UpdateTarget {
 	this := UpdateTarget{}
 	var description string = "default_comment"
 	this.Description = &description
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	var newComment string = "default_comment"
 	this.NewComment = &newComment
@@ -54,6 +56,8 @@ func NewUpdateTargetWithDefaults() *UpdateTarget {
 	this := UpdateTarget{}
 	var description string = "default_comment"
 	this.Description = &description
+	var json bool = false
+	this.Json = &json
 	var newComment string = "default_comment"
 	this.NewComment = &newComment
 	return &this

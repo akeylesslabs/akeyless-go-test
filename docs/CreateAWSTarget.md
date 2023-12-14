@@ -4,24 +4,24 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AccessKey** | Pointer to **string** |  | [optional] 
-**AccessKeyId** | Pointer to **string** |  | [optional] 
+**AccessKey** | **string** | AWS secret access key | 
+**AccessKeyId** | **string** | AWS access key ID | 
 **Comment** | Pointer to **string** | Deprecated - use description | [optional] 
 **Description** | Pointer to **string** | Description of the object | [optional] 
-**Json** | Pointer to **bool** | Set output format to JSON | [optional] 
+**Json** | Pointer to **bool** | Set output format to JSON | [optional] [default to false]
 **Key** | Pointer to **string** | The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used) | [optional] 
 **Name** | **string** | Target name | 
-**Region** | Pointer to **string** |  | [optional] 
-**SessionToken** | Pointer to **string** |  | [optional] 
+**Region** | Pointer to **string** | AWS region | [optional] [default to "us-east-2"]
+**SessionToken** | Pointer to **string** | Required only for temporary security credentials retrieved using STS | [optional] 
 **Token** | Pointer to **string** | Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;) | [optional] 
 **UidToken** | Pointer to **string** | The universal identity token, Required only for universal_identity authentication | [optional] 
-**UseGwCloudIdentity** | Pointer to **bool** |  | [optional] 
+**UseGwCloudIdentity** | Pointer to **bool** | Use the GW&#39;s Cloud IAM | [optional] 
 
 ## Methods
 
 ### NewCreateAWSTarget
 
-`func NewCreateAWSTarget(name string, ) *CreateAWSTarget`
+`func NewCreateAWSTarget(accessKey string, accessKeyId string, name string, ) *CreateAWSTarget`
 
 NewCreateAWSTarget instantiates a new CreateAWSTarget object
 This constructor will assign default values to properties that have it defined,
@@ -55,11 +55,6 @@ and a boolean to check if the value has been set.
 
 SetAccessKey sets AccessKey field to given value.
 
-### HasAccessKey
-
-`func (o *CreateAWSTarget) HasAccessKey() bool`
-
-HasAccessKey returns a boolean if a field has been set.
 
 ### GetAccessKeyId
 
@@ -80,11 +75,6 @@ and a boolean to check if the value has been set.
 
 SetAccessKeyId sets AccessKeyId field to given value.
 
-### HasAccessKeyId
-
-`func (o *CreateAWSTarget) HasAccessKeyId() bool`
-
-HasAccessKeyId returns a boolean if a field has been set.
 
 ### GetComment
 

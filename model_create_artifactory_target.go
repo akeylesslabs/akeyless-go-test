@@ -48,6 +48,8 @@ func NewCreateArtifactoryTarget(artifactoryAdminName string, artifactoryAdminPwd
 	this.ArtifactoryAdminName = artifactoryAdminName
 	this.ArtifactoryAdminPwd = artifactoryAdminPwd
 	this.BaseUrl = baseUrl
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -57,6 +59,8 @@ func NewCreateArtifactoryTarget(artifactoryAdminName string, artifactoryAdminPwd
 // but it doesn't guarantee that properties required by API are set
 func NewCreateArtifactoryTargetWithDefaults() *CreateArtifactoryTarget {
 	this := CreateArtifactoryTarget{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

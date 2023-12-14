@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **BindDnPassword** | **string** | Bind DN Password | 
 **Comment** | Pointer to **string** | Deprecated - use description | [optional] 
 **Description** | Pointer to **string** | Description of the object | [optional] 
-**Json** | Pointer to **bool** | Set output format to JSON | [optional] 
+**Json** | Pointer to **bool** | Set output format to JSON | [optional] [default to false]
 **Key** | Pointer to **string** | The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used) | [optional] 
 **LdapCaCert** | Pointer to **string** | CA Certificate File Content | [optional] 
 **LdapUrl** | **string** | LDAP Server URL | 

@@ -50,6 +50,8 @@ type CreateGKETarget struct {
 // will change when the set of required properties is changed
 func NewCreateGKETarget(name string, ) *CreateGKETarget {
 	this := CreateGKETarget{}
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -59,6 +61,8 @@ func NewCreateGKETarget(name string, ) *CreateGKETarget {
 // but it doesn't guarantee that properties required by API are set
 func NewCreateGKETargetWithDefaults() *CreateGKETarget {
 	this := CreateGKETarget{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

@@ -49,6 +49,8 @@ type CreateAzureTarget struct {
 // will change when the set of required properties is changed
 func NewCreateAzureTarget(name string, ) *CreateAzureTarget {
 	this := CreateAzureTarget{}
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -58,6 +60,8 @@ func NewCreateAzureTarget(name string, ) *CreateAzureTarget {
 // but it doesn't guarantee that properties required by API are set
 func NewCreateAzureTargetWithDefaults() *CreateAzureTarget {
 	this := CreateAzureTarget{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

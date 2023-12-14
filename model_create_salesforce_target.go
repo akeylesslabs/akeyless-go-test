@@ -62,6 +62,8 @@ func NewCreateSalesforceTarget(authFlow string, clientId string, email string, n
 	this.AuthFlow = authFlow
 	this.ClientId = clientId
 	this.Email = email
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	this.TenantUrl = tenantUrl
 	return &this
@@ -72,6 +74,8 @@ func NewCreateSalesforceTarget(authFlow string, clientId string, email string, n
 // but it doesn't guarantee that properties required by API are set
 func NewCreateSalesforceTargetWithDefaults() *CreateSalesforceTarget {
 	this := CreateSalesforceTarget{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

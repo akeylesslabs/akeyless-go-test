@@ -35,6 +35,7 @@ type UpdateEKSTarget struct {
 	EksSecretAccessKey string `json:"eks-secret-access-key"`
 	// Set output format to JSON
 	Json *bool `json:"json,omitempty"`
+	// Whether to keep previous version [true/false]. If not set, use default according to account settings
 	KeepPrevVersion *string `json:"keep-prev-version,omitempty"`
 	// The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used)
 	Key *string `json:"key,omitempty"`
@@ -64,6 +65,8 @@ func NewUpdateEKSTarget(eksAccessKeyId string, eksClusterCaCert string, eksClust
 	var eksRegion string = "us-east-2"
 	this.EksRegion = &eksRegion
 	this.EksSecretAccessKey = eksSecretAccessKey
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -75,6 +78,8 @@ func NewUpdateEKSTargetWithDefaults() *UpdateEKSTarget {
 	this := UpdateEKSTarget{}
 	var eksRegion string = "us-east-2"
 	this.EksRegion = &eksRegion
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

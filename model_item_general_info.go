@@ -19,11 +19,13 @@ import (
 type ItemGeneralInfo struct {
 	CertIssueDetails *CertificateIssueInfo `json:"cert_issue_details,omitempty"`
 	CertificateChainInfo *CertificateChainInfo `json:"certificate_chain_info,omitempty"`
+	CertificatesTemplateInfo *CertificateTemplateInfo `json:"certificates_template_info,omitempty"`
 	ClassicKeyDetails *ClassicKeyDetailsInfo `json:"classic_key_details,omitempty"`
 	ClusterGwUrl *string `json:"cluster_gw_url,omitempty"`
 	DisplayMetadata *string `json:"display_metadata,omitempty"`
 	DynamicSecretProducerDetails *DynamicSecretProducerInfo `json:"dynamic_secret_producer_details,omitempty"`
 	ImporterInfo *ImporterInfo `json:"importer_info,omitempty"`
+	OidcClientInfo *OidcClientInfo `json:"oidc_client_info,omitempty"`
 	PasswordPolicy *PasswordPolicyInfo `json:"password_policy,omitempty"`
 	RotatedSecretDetails *RotatedSecretDetailsInfo `json:"rotated_secret_details,omitempty"`
 	SecureRemoteAccessDetails *SecureRemoteAccess `json:"secure_remote_access_details,omitempty"`
@@ -110,6 +112,38 @@ func (o *ItemGeneralInfo) HasCertificateChainInfo() bool {
 // SetCertificateChainInfo gets a reference to the given CertificateChainInfo and assigns it to the CertificateChainInfo field.
 func (o *ItemGeneralInfo) SetCertificateChainInfo(v CertificateChainInfo) {
 	o.CertificateChainInfo = &v
+}
+
+// GetCertificatesTemplateInfo returns the CertificatesTemplateInfo field value if set, zero value otherwise.
+func (o *ItemGeneralInfo) GetCertificatesTemplateInfo() CertificateTemplateInfo {
+	if o == nil || o.CertificatesTemplateInfo == nil {
+		var ret CertificateTemplateInfo
+		return ret
+	}
+	return *o.CertificatesTemplateInfo
+}
+
+// GetCertificatesTemplateInfoOk returns a tuple with the CertificatesTemplateInfo field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ItemGeneralInfo) GetCertificatesTemplateInfoOk() (*CertificateTemplateInfo, bool) {
+	if o == nil || o.CertificatesTemplateInfo == nil {
+		return nil, false
+	}
+	return o.CertificatesTemplateInfo, true
+}
+
+// HasCertificatesTemplateInfo returns a boolean if a field has been set.
+func (o *ItemGeneralInfo) HasCertificatesTemplateInfo() bool {
+	if o != nil && o.CertificatesTemplateInfo != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetCertificatesTemplateInfo gets a reference to the given CertificateTemplateInfo and assigns it to the CertificatesTemplateInfo field.
+func (o *ItemGeneralInfo) SetCertificatesTemplateInfo(v CertificateTemplateInfo) {
+	o.CertificatesTemplateInfo = &v
 }
 
 // GetClassicKeyDetails returns the ClassicKeyDetails field value if set, zero value otherwise.
@@ -270,6 +304,38 @@ func (o *ItemGeneralInfo) HasImporterInfo() bool {
 // SetImporterInfo gets a reference to the given ImporterInfo and assigns it to the ImporterInfo field.
 func (o *ItemGeneralInfo) SetImporterInfo(v ImporterInfo) {
 	o.ImporterInfo = &v
+}
+
+// GetOidcClientInfo returns the OidcClientInfo field value if set, zero value otherwise.
+func (o *ItemGeneralInfo) GetOidcClientInfo() OidcClientInfo {
+	if o == nil || o.OidcClientInfo == nil {
+		var ret OidcClientInfo
+		return ret
+	}
+	return *o.OidcClientInfo
+}
+
+// GetOidcClientInfoOk returns a tuple with the OidcClientInfo field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ItemGeneralInfo) GetOidcClientInfoOk() (*OidcClientInfo, bool) {
+	if o == nil || o.OidcClientInfo == nil {
+		return nil, false
+	}
+	return o.OidcClientInfo, true
+}
+
+// HasOidcClientInfo returns a boolean if a field has been set.
+func (o *ItemGeneralInfo) HasOidcClientInfo() bool {
+	if o != nil && o.OidcClientInfo != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetOidcClientInfo gets a reference to the given OidcClientInfo and assigns it to the OidcClientInfo field.
+func (o *ItemGeneralInfo) SetOidcClientInfo(v OidcClientInfo) {
+	o.OidcClientInfo = &v
 }
 
 // GetPasswordPolicy returns the PasswordPolicy field value if set, zero value otherwise.
@@ -440,6 +506,9 @@ func (o ItemGeneralInfo) MarshalJSON() ([]byte, error) {
 	if o.CertificateChainInfo != nil {
 		toSerialize["certificate_chain_info"] = o.CertificateChainInfo
 	}
+	if o.CertificatesTemplateInfo != nil {
+		toSerialize["certificates_template_info"] = o.CertificatesTemplateInfo
+	}
 	if o.ClassicKeyDetails != nil {
 		toSerialize["classic_key_details"] = o.ClassicKeyDetails
 	}
@@ -454,6 +523,9 @@ func (o ItemGeneralInfo) MarshalJSON() ([]byte, error) {
 	}
 	if o.ImporterInfo != nil {
 		toSerialize["importer_info"] = o.ImporterInfo
+	}
+	if o.OidcClientInfo != nil {
+		toSerialize["oidc_client_info"] = o.OidcClientInfo
 	}
 	if o.PasswordPolicy != nil {
 		toSerialize["password_policy"] = o.PasswordPolicy

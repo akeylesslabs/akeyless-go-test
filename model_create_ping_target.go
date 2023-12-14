@@ -53,6 +53,8 @@ func NewCreatePingTarget(name string, ) *CreatePingTarget {
 	this.AdministrativePort = &administrativePort
 	var authorizationPort string = "9031"
 	this.AuthorizationPort = &authorizationPort
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -66,6 +68,8 @@ func NewCreatePingTargetWithDefaults() *CreatePingTarget {
 	this.AdministrativePort = &administrativePort
 	var authorizationPort string = "9031"
 	this.AuthorizationPort = &authorizationPort
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

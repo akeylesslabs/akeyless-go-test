@@ -27,6 +27,7 @@ type UpdatePingTarget struct {
 	Description *string `json:"description,omitempty"`
 	// Set output format to JSON
 	Json *bool `json:"json,omitempty"`
+	// Whether to keep previous version [true/false]. If not set, use default according to account settings
 	KeepPrevVersion *string `json:"keep-prev-version,omitempty"`
 	// The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used)
 	Key *string `json:"key,omitempty"`
@@ -58,6 +59,8 @@ func NewUpdatePingTarget(name string, ) *UpdatePingTarget {
 	this.AdministrativePort = &administrativePort
 	var authorizationPort string = "9031"
 	this.AuthorizationPort = &authorizationPort
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -71,6 +74,8 @@ func NewUpdatePingTargetWithDefaults() *UpdatePingTarget {
 	this.AdministrativePort = &administrativePort
 	var authorizationPort string = "9031"
 	this.AuthorizationPort = &authorizationPort
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

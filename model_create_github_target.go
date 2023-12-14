@@ -45,6 +45,10 @@ type CreateGithubTarget struct {
 // will change when the set of required properties is changed
 func NewCreateGithubTarget(name string, ) *CreateGithubTarget {
 	this := CreateGithubTarget{}
+	var githubBaseUrl string = "https://api.github.com/"
+	this.GithubBaseUrl = &githubBaseUrl
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -54,6 +58,10 @@ func NewCreateGithubTarget(name string, ) *CreateGithubTarget {
 // but it doesn't guarantee that properties required by API are set
 func NewCreateGithubTargetWithDefaults() *CreateGithubTarget {
 	this := CreateGithubTarget{}
+	var githubBaseUrl string = "https://api.github.com/"
+	this.GithubBaseUrl = &githubBaseUrl
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

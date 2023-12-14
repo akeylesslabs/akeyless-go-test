@@ -33,6 +33,7 @@ type UpdateGKETarget struct {
 	GkeServiceAccountEmail *string `json:"gke-service-account-email,omitempty"`
 	// Set output format to JSON
 	Json *bool `json:"json,omitempty"`
+	// Whether to keep previous version [true/false]. If not set, use default according to account settings
 	KeepPrevVersion *string `json:"keep-prev-version,omitempty"`
 	// The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used)
 	Key *string `json:"key,omitempty"`
@@ -55,6 +56,8 @@ type UpdateGKETarget struct {
 // will change when the set of required properties is changed
 func NewUpdateGKETarget(name string, ) *UpdateGKETarget {
 	this := UpdateGKETarget{}
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -64,6 +67,8 @@ func NewUpdateGKETarget(name string, ) *UpdateGKETarget {
 // but it doesn't guarantee that properties required by API are set
 func NewUpdateGKETargetWithDefaults() *UpdateGKETarget {
 	this := UpdateGKETarget{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 

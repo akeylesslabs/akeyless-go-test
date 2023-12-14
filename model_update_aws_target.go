@@ -17,14 +17,17 @@ import (
 
 // UpdateAWSTarget struct for UpdateAWSTarget
 type UpdateAWSTarget struct {
-	AccessKey *string `json:"access-key,omitempty"`
-	AccessKeyId *string `json:"access-key-id,omitempty"`
+	// AWS secret access key
+	AccessKey string `json:"access-key"`
+	// AWS access key ID
+	AccessKeyId string `json:"access-key-id"`
 	// Deprecated - use description
 	Comment *string `json:"comment,omitempty"`
 	// Description of the object
 	Description *string `json:"description,omitempty"`
 	// Set output format to JSON
 	Json *bool `json:"json,omitempty"`
+	// Whether to keep previous version [true/false]. If not set, use default according to account settings
 	KeepPrevVersion *string `json:"keep-prev-version,omitempty"`
 	// The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used)
 	Key *string `json:"key,omitempty"`
@@ -32,7 +35,9 @@ type UpdateAWSTarget struct {
 	Name string `json:"name"`
 	// New target name
 	NewName *string `json:"new-name,omitempty"`
+	// AWS region
 	Region *string `json:"region,omitempty"`
+	// Required only for temporary security credentials retrieved using STS
 	SessionToken *string `json:"session-token,omitempty"`
 	// Authentication token (see `/auth` and `/configure`)
 	Token *string `json:"token,omitempty"`
@@ -40,6 +45,7 @@ type UpdateAWSTarget struct {
 	UidToken *string `json:"uid-token,omitempty"`
 	// Deprecated
 	UpdateVersion *bool `json:"update-version,omitempty"`
+	// Use the GW's Cloud IAM
 	UseGwCloudIdentity *bool `json:"use-gw-cloud-identity,omitempty"`
 }
 
@@ -47,9 +53,15 @@ type UpdateAWSTarget struct {
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewUpdateAWSTarget(name string, ) *UpdateAWSTarget {
+func NewUpdateAWSTarget(accessKey string, accessKeyId string, name string, ) *UpdateAWSTarget {
 	this := UpdateAWSTarget{}
+	this.AccessKey = accessKey
+	this.AccessKeyId = accessKeyId
+	var json bool = false
+	this.Json = &json
 	this.Name = name
+	var region string = "us-east-2"
+	this.Region = &region
 	return &this
 }
 
@@ -58,71 +70,59 @@ func NewUpdateAWSTarget(name string, ) *UpdateAWSTarget {
 // but it doesn't guarantee that properties required by API are set
 func NewUpdateAWSTargetWithDefaults() *UpdateAWSTarget {
 	this := UpdateAWSTarget{}
+	var json bool = false
+	this.Json = &json
+	var region string = "us-east-2"
+	this.Region = &region
 	return &this
 }
 
-// GetAccessKey returns the AccessKey field value if set, zero value otherwise.
+// GetAccessKey returns the AccessKey field value
 func (o *UpdateAWSTarget) GetAccessKey() string {
-	if o == nil || o.AccessKey == nil {
+	if o == nil  {
 		var ret string
 		return ret
 	}
-	return *o.AccessKey
+
+	return o.AccessKey
 }
 
-// GetAccessKeyOk returns a tuple with the AccessKey field value if set, nil otherwise
+// GetAccessKeyOk returns a tuple with the AccessKey field value
 // and a boolean to check if the value has been set.
 func (o *UpdateAWSTarget) GetAccessKeyOk() (*string, bool) {
-	if o == nil || o.AccessKey == nil {
+	if o == nil  {
 		return nil, false
 	}
-	return o.AccessKey, true
+	return &o.AccessKey, true
 }
 
-// HasAccessKey returns a boolean if a field has been set.
-func (o *UpdateAWSTarget) HasAccessKey() bool {
-	if o != nil && o.AccessKey != nil {
-		return true
-	}
-
-	return false
-}
-
-// SetAccessKey gets a reference to the given string and assigns it to the AccessKey field.
+// SetAccessKey sets field value
 func (o *UpdateAWSTarget) SetAccessKey(v string) {
-	o.AccessKey = &v
+	o.AccessKey = v
 }
 
-// GetAccessKeyId returns the AccessKeyId field value if set, zero value otherwise.
+// GetAccessKeyId returns the AccessKeyId field value
 func (o *UpdateAWSTarget) GetAccessKeyId() string {
-	if o == nil || o.AccessKeyId == nil {
+	if o == nil  {
 		var ret string
 		return ret
 	}
-	return *o.AccessKeyId
+
+	return o.AccessKeyId
 }
 
-// GetAccessKeyIdOk returns a tuple with the AccessKeyId field value if set, nil otherwise
+// GetAccessKeyIdOk returns a tuple with the AccessKeyId field value
 // and a boolean to check if the value has been set.
 func (o *UpdateAWSTarget) GetAccessKeyIdOk() (*string, bool) {
-	if o == nil || o.AccessKeyId == nil {
+	if o == nil  {
 		return nil, false
 	}
-	return o.AccessKeyId, true
+	return &o.AccessKeyId, true
 }
 
-// HasAccessKeyId returns a boolean if a field has been set.
-func (o *UpdateAWSTarget) HasAccessKeyId() bool {
-	if o != nil && o.AccessKeyId != nil {
-		return true
-	}
-
-	return false
-}
-
-// SetAccessKeyId gets a reference to the given string and assigns it to the AccessKeyId field.
+// SetAccessKeyId sets field value
 func (o *UpdateAWSTarget) SetAccessKeyId(v string) {
-	o.AccessKeyId = &v
+	o.AccessKeyId = v
 }
 
 // GetComment returns the Comment field value if set, zero value otherwise.
@@ -535,10 +535,10 @@ func (o *UpdateAWSTarget) SetUseGwCloudIdentity(v bool) {
 
 func (o UpdateAWSTarget) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
-	if o.AccessKey != nil {
+	if true {
 		toSerialize["access-key"] = o.AccessKey
 	}
-	if o.AccessKeyId != nil {
+	if true {
 		toSerialize["access-key-id"] = o.AccessKeyId
 	}
 	if o.Comment != nil {

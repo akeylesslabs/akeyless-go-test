@@ -43,6 +43,8 @@ type CreateDockerhubTarget struct {
 // will change when the set of required properties is changed
 func NewCreateDockerhubTarget(name string, ) *CreateDockerhubTarget {
 	this := CreateDockerhubTarget{}
+	var json bool = false
+	this.Json = &json
 	this.Name = name
 	return &this
 }
@@ -52,6 +54,8 @@ func NewCreateDockerhubTarget(name string, ) *CreateDockerhubTarget {
 // but it doesn't guarantee that properties required by API are set
 func NewCreateDockerhubTargetWithDefaults() *CreateDockerhubTarget {
 	this := CreateDockerhubTarget{}
+	var json bool = false
+	this.Json = &json
 	return &this
 }
 
